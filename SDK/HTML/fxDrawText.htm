@@ -1,0 +1,130 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1257">
+<title>FX.DLL SDK</title>
+</head>
+
+<body>
+
+<table border=0 cellspacing=0 cellpadding=0 width=360 style='border-collapse:collapse;mso-padding-alt:3.0pt 3.0pt 3.0pt 3.0pt'>
+<tr>
+<td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+<p style='margin-bottom:0; margin-top:0'><span style='font-size:24.0pt;
+font-family:Verdana'>fxDrawText</span></p>
+</td>
+</tr>
+<tr>
+<td style='padding:3.0pt 3.0pt 3.0pt 3.0pt' style='margin-bottom:0; margin-top:0'>
+<p style='margin-bottom:0; margin-top:0'><span style='font-size:8.5pt;
+font-family:Verdana'>Function draws a character string with specified color and 
+blending value to the specified rectangle, using given font object.</span></p>
+<p style='margin-bottom:0; margin-top:0'>
+<span style="font-family: Verdana; font-size: 8.5pt">&nbsp;</span></p>
+</td>
+</tr>
+<tr style='height:13.5pt'>
+<td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+height:13.5pt'>
+<p style='margin-bottom:0; margin-top:0'><b><span style='font-size:8.5pt;
+font-family:Verdana'>Declaration</span></b><span style='font-size:8.5pt;
+font-family:Verdana'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style='padding:3.0pt 3.0pt 3.0pt 3.0pt' style='margin-bottom:0; margin-top:0'>
+<p style='margin-bottom:0; margin-top:0'><span style='font-size:8.5pt;
+font-family:"Courier New"'><p align='left' style='margin-top: 0; margin-bottom: 0'>
+Declare Function <b>fxDrawText</b> Lib &quot;fx.dll&quot; ( _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>DC</b> As Long, 
+_</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>X</b> As Long, 
+_</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>Y</b> As Long, 
+_</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>Width</b> As 
+Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>Height</b> As 
+Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>Text</b> As 
+String, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>Color</b> As 
+Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>Font</b> As 
+Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>Blending </b>As 
+long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>Flags</b> As 
+Long) As Long</p>
+</span></p>
+</td>
+</tr>
+<tr style='height:13.5pt'>
+<td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+height:13.5pt'>
+<p style='margin-bottom:0; margin-top:0'><b><span style='font-size:8.5pt;
+font-family:Verdana'>Parameters</span></b><span style='font-size:8.5pt;
+font-family:Verdana'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style='padding:3.0pt 3.0pt 3.0pt 3.0pt' style='margin-bottom:0; margin-top:0'>
+<p style='margin-bottom:0; margin-top:0' style="margin-top: 0; margin-bottom: 0">
+<span style='font-size:8.5pt; font-family:Courier New'><p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>DC</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Identifies device context.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>X</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies the logical x-coordinate of the 
+left top corner of the bounding rectangle.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>Y</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>
+<span style='font-size:8.5pt; font-family:Courier New'>Specifies the logical 
+y-coordinate of the left top corner of the bounding rectangle.</span></p>
+<span style='font-size:8.5pt; font-family:Courier New'>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>Width</b></p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies, in logical 
+units, the width of the bounding rectangle.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>Height</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies, in logical 
+units, the height of the bounding rectangle.</p>
+</span>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>Text</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies the text to 
+draw.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>Color</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies the text RGB color.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>Font</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>
+<span style='font-size:8.5pt; font-family:Courier New'>Identifies font object. 
+Font object can be created with CreateFont API function.</span></p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>
+<span style='font-size:8.5pt; font-family:Courier New'>· <b>Blending</b>
+</span> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies blending value 
+(0-255).</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>Flags</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Reserved parameter.</p>
+</span></p>
+</td>
+</tr>
+<tr>
+<td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+height:13.5pt'>
+<p style='margin-bottom:0; margin-top:0'><span style="font-size: 8.5pt"><b>
+<span style="font-family: Verdana">Return Values</span></b></span></p>
+</td>
+</tr>
+<tr>
+<td style='padding:3.0pt 3.0pt 3.0pt 3.0pt' style='margin-bottom:0; margin-top:0'>
+<p style="margin-top: 0; margin-bottom: 0">
+<span style='font-size:8.5pt; font-family:Verdana'>If the function succeeds, the return value is nonzero; if fails, the return value is zero.</span></p>
+<p style="margin-top: 0; margin-bottom: 0">
+<span style="font-family: Verdana; font-size: 8.5pt">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

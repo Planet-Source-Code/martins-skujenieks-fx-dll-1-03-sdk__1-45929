@@ -1,0 +1,475 @@
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1257">
+<meta name=ProgId content=FrontPage.Editor.Document>
+<meta name=Generator content="Microsoft FrontPage 5.0">
+<meta name=Originator content="Microsoft Word 9">
+<title>FX.DLL SDK</title>
+
+<style>
+body {color: #000000; font-family: Verdana; font-size: 11px; margin: 8px;}
+td {color: #000000; font-family: Verdana; font-size: 11px;}
+a:link {color: #333399;}
+a:visited {color: #666666;}
+a:active {color: #333399;}
+a:hover {color: #cc0033;}
+</style>
+
+</head>
+
+<body lang=EN-US style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<table border=0 cellspacing=0 cellpadding=0 width=360 style='width:270.0pt;
+ border-collapse:collapse;mso-padding-alt:3.0pt 3.0pt 3.0pt 3.0pt'>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><font size="6">
+  <span style="font-family: Verdana">FX.DLL 1.03 SDK</span></font></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <b>FX Technology</b></td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style="margin-top: 0; margin-bottom: 0">FX library was developed for 
+  programmers working within Visual Basic. The FX technology offers you fast, 
+  powerful and safe on Graphical Device Interface (GDI) based solutions.</p>
+  <p style="margin-top: 0; margin-bottom: 0">FX library is written in Microsoft 
+  Visual C++ 6.0 and is working in Win32 subsystem. FX library supports all 
+  Windows platforms, except for the historical Windows 3x.
+  </p>
+  <p style="margin-top: 0; margin-bottom: 0">The FX technology can be powerfull 
+  solution to graphical problems if you prefer working within GDI. Learn, how to 
+  get the maximum out of the FX library with this SDK!<span style="font-family: Verdana; font-size: 8.5pt"><br>
+&nbsp;&nbsp; </span>
+  </p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <b>End User License Agreement (EULA)</b></td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style="margin-top: 0; margin-bottom: 0">
+  <span style="font-family: Verdana; font-size: 8.5pt">This product is provided 
+  &quot;as is&quot;, with no guarantee of completeness or accuracy and without warranty of 
+  any kind, express or implied.</span></p>
+  <p style="margin-top: 0; margin-bottom: 0">
+  <span style="font-family: Verdana; font-size: 8.5pt"><br>
+  In no event will developer be liable for damages of any kind that may be 
+  incurred with your hardware, peripherals or software programs.</span></p>
+  <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+  <p style="margin-top: 0; margin-bottom: 0">
+  <span style="font-family: Verdana; font-size: 8.5pt">This product and all of 
+  its parts may not be copied, emulated, cloned, rented, leased, sold, 
+  reproduced, modified, decompiled, disassembled, otherwise reverse engineered, 
+  republished, uploaded, posted, transmitted or distributed in any way, without 
+  prior written consent of the developer.<br>
+&nbsp;&nbsp; </span>
+  </p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <b>Frequently Asked Questions (FAQ)</b></td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style="margin-top: 0; margin-bottom: 0"><b>How to use FX.DLL with Visual 
+  Basic?</b></p>
+  <p style="margin-top: 0; margin-bottom: 0">FX.DLL 1.03 SDK comes not only with 
+  FX.DLL. There is also included BAS file (Visual Basic module) in package. 
+  FX.BAS is main key to access FX library easy and fast, as it contents all 
+  FX.DLL API declarations, constant and tag definitions. </p>
+  <p style="margin-top: 0; margin-bottom: 0">To use FX.DLL in your Visual Basic 
+  projects simply copy the FX.BAS file to your project folder. Then open your 
+  Visual Basic project, on <u>menu</u> click <u>Project</u>, point to <u>Add 
+  Module</u> and click it. Wait until browse window opens. Then on tab choose <u>
+  Existing</u>. Select the FX.BAS module and experience the FX technology!</p>
+  <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+  <p style="margin-top: 0; margin-bottom: 0"><b>Where the FX.DLL will render 
+  bit-maps?</b></p>
+  <p style="margin-top: 0; margin-bottom: 0">As already you could imagine, 
+  FX.DLL uses Device Context (DC) as surface where bit-maps will be displayed. 
+  This means that you can use any object that has DC as surface for rendering.</p>
+  <p style="margin-top: 0; margin-bottom: 0">I suggest using Picture Boxes, 
+  because they are easy to use. Always remember to set following Picture 
+  Box properties to be able to render bit-maps on their surface correctly:</p>
+  <p style="margin-top: 0; margin-bottom: 0"><font face="Courier New">AutoRedraw 
+  = True</font></p>
+  <p style="margin-top: 0; margin-bottom: 0"><font face="Courier New">ScaleMode 
+  = vbPixels</font></p>
+  <p style="margin-top: 0; margin-bottom: 0">If you want to use Picture Box as 
+  invisible back-buffer, use following property values:</p>
+  <p style="margin-top: 0; margin-bottom: 0"><font face="Courier New">AutoRedraw 
+  = True</font></p>
+  <p style="margin-top: 0; margin-bottom: 0"><font face="Courier New">AutoSize = 
+  True</font></p>
+  <p style="margin-top: 0; margin-bottom: 0"><font face="Courier New">ScaleMode 
+  = vbPixels</font></p>
+  <p style="margin-top: 0; margin-bottom: 0"><font face="Courier New">Visible = 
+  False</font></p>
+  <p style="margin-top: 0; margin-bottom: 0">Of course you can and always should 
+  use memory DCs as back-buffers instead of Picture Boxes, because memory DCs 
+  works much faster and saves some system resources as well.</p>
+  <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+  <p style="margin-top: 0; margin-bottom: 0"><b>How the rendering should be done?</b></p>
+  <p style="margin-top: 0; margin-bottom: 0">When you are rendering bit-maps 
+  with FX.DLL you must always remember to clear DC at first place and update it at 
+  last place. This can be done very easy, if you use Picture Box. Simply call
+  <font face="Courier New">.Cls</font> to clear the DC and
+  <font face="Courier New">.Refresh</font> to update it. The simple example of 
+  rendering in Picture Box looks like this:</p>
+  <p style="margin-top: 0; margin-bottom: 0"><font face="Courier New">Private Sub Update()</font></p>
+  <p style="margin-top: 0; margin-bottom: 0"><font face="Courier New">&nbsp;&nbsp;&nbsp; 
+  Picture1.Cls</font></p>
+  <p style="margin-top: 0; margin-bottom: 0"><font face="Courier New">&nbsp;&nbsp;&nbsp; 
+  fxText Picture1.hDC, 10, 10, &quot;Hello World!&quot;, _</font></p>
+  <p style="margin-top: 0; margin-bottom: 0"><font face="Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  vbBlue, TA_LEFT</font></p>
+  <p style="margin-top: 0; margin-bottom: 0"><font face="Courier New">&nbsp;&nbsp;&nbsp; 
+  Picture1.Refresh</font></p>
+  <p style="margin-top: 0; margin-bottom: 0"><font face="Courier New">End Sub</font></p>
+  <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+  font-family:Verdana'>Declarations</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'>A</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxAlphaBlend.htm">fxAlphaBlend</a><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a
+  href="fxAmbientlight.htm">fxAmbientlight</a><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxAntiAlias.htm">fxAntiAlias</a></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>B</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxBitBlt.htm">fxBitBlt</a><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxBlur.htm">fxBlur</a><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxBrightness.htm">fxBrightness</a></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>C</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxCMYK.htm">fxCMYK</a></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>D</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><a href="fxDrawText.htm">fxDrawText</a></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>E</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><a href="fxEmboss.htm">fxEmboss</a></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><a href="fxEngrave.htm">fxEngrave</a></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>F</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>G</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxGamma.htm">fxGamma</a><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxGetRGB.htm">fxGetBlue</a><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxGetRGB.htm">fxGetGreen</a><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxGetRGB.htm">fxGetRed</a><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxGreyscale.htm">fxGreyscale</a><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxGridelines.htm">fxGridelines</a></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>H</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxHSLtoRGB.htm">fxHSLtoRGB</a><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxHue.htm">fxHue</a></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>I</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxInversion.htm">fxInversion</a><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxInvert.htm">fxInvert</a></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>J</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>K</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>L</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><a href="fxLight.htm">fxLight</a></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>M</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><a href="fxMirror.htm">fxMirror</a></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><a href="fxMosaic.htm">fxMosaic</a></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>N</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>O</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>P</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'><a href="fxPaletteIndex.htm">fxPaletteIndex</a><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'><a href="fxPaletteRGB.htm">fxPaletteRGB</a></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>Q</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>R</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><a href="fxRelief.htm">fxRelief</a></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'><a href="fxReduceColors.htm">fxReduceColors</a></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><a href="fxRender.htm">fxRender</a></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a
+  href="fxReplaceColor.htm">fxReplaceColor</a><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a
+  href="fxReplaceColors.htm">fxReplaceColors</a></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><a href="fxResample.htm">fxResample</a></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxRGB.htm">fxRGB</a><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxRGBtoHSL.htm">fxRGBtoHSL</a></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><a href="fxRotate.htm">fxRotate</a></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>S</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxScanlines.htm">fxScanlines</a><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxScreenShot.htm">fxScreenShot</a></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><a href="fxScroll.htm">fxScroll</a></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>
+  <a href="fxSemitransparentBlt.htm">fxSemitransparentBlt</a></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxShadeColors.htm">fxShadeColors</a><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxStretchBlt.htm">fxStretchBlt</a></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>T</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="fxText.htm">fxText</a></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><a href="fxTone.htm">fxTone</a></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a
+  href="fxTransparentBlt.htm">fxTransparentBlt</a></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>U</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>V</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>W</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>X</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>Y</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'>Z</p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><a href="fxZoom.htm">fxZoom</a></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <span style="font-size: 8.5pt"><b><span style="font-family: Verdana">Version 
+  History</span></b></span></td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style="margin-top: 0; margin-bottom: 0"><b>Version 1.03</b></p>
+  <p style="margin-top: 0; margin-bottom: 0">--------</p>
+  <p style="margin-top: 0; margin-bottom: 0">[June 1, 2003]</p>
+  <p style="margin-top: 0; margin-bottom: 0">--------</p>
+  <p style="margin-top: 0; margin-bottom: 0">Added:</p>
+  <p style="margin-top: 0; margin-bottom: 0">- mirror effect</p>
+  <p style="margin-top: 0; margin-bottom: 0">- shift effect</p>
+  <p style="margin-top: 0; margin-bottom: 0">- bitmap resample</p>
+  <p style="margin-top: 0; margin-bottom: 0">Optimized:</p>
+  <p style="margin-top: 0; margin-bottom: 0">- greatly improved speed of zoom 
+  and render functions</p>
+  <p style="margin-top: 0; margin-bottom: 0">Fixed:</p>
+  <p style="margin-top: 0; margin-bottom: 0">- atlast fixed never-ending 
+  problems with anti-aliasing</p>
+  <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+  <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+  <p style="margin-top: 0; margin-bottom: 0"><b>Version 1.02</b></p>
+  <p style="margin-top: 0; margin-bottom: 0">--------</p>
+  <p style="margin-top: 0; margin-bottom: 0">[May 2, 2003]</p>
+  <p style="margin-top: 0; margin-bottom: 0">--------</p>
+  <p style="margin-top: 0; margin-bottom: 0">Added:</p>
+  <p style="margin-top: 0; margin-bottom: 0">- bitmap rotation</p>
+  <p style="margin-top: 0; margin-bottom: 0">- bitmap zoom</p>
+  <p style="margin-top: 0; margin-bottom: 0">- bitmap rendering</p>
+  <p style="margin-top: 0; margin-bottom: 0">-  scrolling using bit-block 
+  transfer</p>
+  <p style="margin-top: 0; margin-bottom: 0">- emboss effect</p>
+  <p style="margin-top: 0; margin-bottom: 0">- engrave effect</p>
+  <p style="margin-top: 0; margin-bottom: 0">- light rendering</p>
+  <p style="margin-top: 0; margin-bottom: 0">- mosaic effect</p>
+  <p style="margin-top: 0; margin-bottom: 0">- relief effect</p>
+  <p style="margin-top: 0; margin-bottom: 0">- semi-transparent bit-block 
+  transfer</p>
+  <p style="margin-top: 0; margin-bottom: 0">- text drawing</p>
+  <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+  <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+  <p style="margin-top: 0; margin-bottom: 0">
+  <span style="font-family: Verdana; font-size: 8.5pt"><b>Version 1.01</b><br>
+  --------<br>
+  [April 15, 2003]</span></p>
+  <p style="margin-top: 0; margin-bottom: 0">--------<span style="font-family: Verdana; font-size: 8.5pt"><br>
+  Added:</span></p>
+  <p style="margin-top: 0; margin-bottom: 0">- reserved parameter to function 
+  declaration</p>
+  <p style="margin-top: 0; margin-bottom: 0">Optimized:</p>
+  <p style="margin-top: 0; margin-bottom: 0">- transparent bit-block-transfer is 
+  now much faster</p>
+  <p style="margin-top: 0; margin-bottom: 0">-
+  <span style="font-family: Verdana; font-size: 8.5pt">grideline and scanline 
+  drawing algorythms</span></p>
+  <p style="margin-top: 0; margin-bottom: 0">- hue correction algorythm</p>
+  <p style="margin-top: 0; margin-bottom: 0">Fixed:</p>
+  <p style="margin-top: 0; margin-bottom: 0">- issue with color loss during 
+  bitmap stretching</p>
+  <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+  <p style="margin-top: 0; margin-bottom: 0">
+  <span style="font-family: Verdana; font-size: 8.5pt"><b>Version 1.00 </b></span></p>
+  <p style="margin-top: 0; margin-bottom: 0">
+  ------<span style="font-family: Verdana; font-size: 8.5pt">--<br>
+  [April 1, 2003]</span></p>
+  <p style="margin-top: 0; margin-bottom: 0">--------<span style="font-family: Verdana; font-size: 8.5pt"><br>
+  Features:<br>
+  - alpha blending<br>
+  - ambient-light<br>
+  - anti-alias<br>
+  - bit-block transfer<br>
+  - blur<br>
+  - brightness correction<br>
+  - CMYK calculation</span></p>
+  <p style="margin-top: 0; margin-bottom: 0">
+  <span style="font-family: Verdana; font-size: 8.5pt">- color reducing<br>
+  - color replacing<br>
+  - color palettes<br>
+  - gamma ramp correction<br>
+  - greyscaling<br>
+  - grideline drawing<br>
+  - HSL from RGB calculation<br>
+  - HSL to RGB calculation<br>
+  - hue correction<br>
+  </span>
+  -
+  <span style="font-family: Verdana; font-size: 8.5pt">inversion</span></p>
+  <p style="margin-top: 0; margin-bottom: 0">
+  <span style="font-family: Verdana; font-size: 8.5pt">- inverting  <br>
+  - RGB calculation<br>
+  - R, G, B value calculation<br>
+  - saturation correction<br>
+  - scanline drawing<br>
+  - screen shooting<br>
+  - stretch bit-block transfer<br>
+  - text output<br>
+  - transparent bit-block transfer<br>
+&nbsp;&nbsp; </span>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <span style="font-size: 8.5pt"><b><span style="font-family: Verdana">System 
+  Requirements</span></b></span></td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style="margin:0cm;margin-bottom:.0001pt">
+  <span style="font-family: Verdana; font-size: 8.5pt">- Microsoft Windows XP, 
+  2000, NT 4, NT 3, ME, 98, 95<br>
+  - Pentium II 300 MHz processor<br>
+  - 32 MB RAM<br>
+  - 1 MB HDD space<br>
+  - 32-Bit video mode supproting graphics card</span></p>
+  <p style="margin:0cm;margin-bottom:.0001pt">
+  <span style="font-family: Verdana; font-size: 8.5pt">&nbsp;&nbsp;&nbsp; </span>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style="font-size: 8.5pt"><b>
+  <span style="font-family: Verdana">Credits</span></b></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style="margin:0cm;margin-bottom:.0001pt">
+  <span style="font-family: Verdana; font-size: 8.5pt">Copyright © Martins 
+  Skujenieks 2003</span></p>
+  <table border="0" cellpadding="4" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="360">
+    <tr>
+      <td></td>
+    </tr>
+  </table>
+  <p style="margin:0cm;margin-bottom:.0001pt">
+  <span style="font-family: Verdana; font-size: 8.5pt">Visit </span><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a target="_blank" href="http://www.exe.times.lv">http://www.exe.times.lv</a></span><span style="font-family: Verdana; font-size: 8.5pt">!</span></p>
+  <p style="margin:0cm;margin-bottom:.0001pt">
+  <span style="font-family: Verdana; font-size: 8.5pt">E-Mail </span><span style='font-size:8.5pt;
+  font-family:Verdana'>
+  <a href="mailto:martins_s@mail.teliamtc.lv">Martins Skujenieks</a><a
+  href="fxTransparentBlt.htm" style="text-decoration: underline; text-underline: single">!</a></span></td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=LV><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
