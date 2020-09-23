@@ -1,0 +1,98 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1257">
+<title>FX.DLL SDK</title>
+</head>
+
+<body>
+
+<table border=0 cellspacing=0 cellpadding=0 width=360 style='border-collapse:collapse;mso-padding-alt:3.0pt 3.0pt 3.0pt 3.0pt'>
+<tr>
+<td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+<p style='margin-bottom:0; margin-top:0'><span style='font-size:24.0pt;
+font-family:Verdana'>fxLight</span></p>
+</td>
+</tr>
+<tr>
+<td style='padding:3.0pt 3.0pt 3.0pt 3.0pt' style='margin-bottom:0; margin-top:0'>
+<p style='margin-bottom:0; margin-top:0'><span style='font-size:8.5pt;
+font-family:Verdana'>Renders light source on the bitmap.</span></p>
+<p style='margin-bottom:0; margin-top:0'>
+<span style="font-family: Verdana; font-size: 8.5pt">&nbsp;</span></p>
+</td>
+</tr>
+<tr style='height:13.5pt'>
+<td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+height:13.5pt'>
+<p style='margin-bottom:0; margin-top:0'><b><span style='font-size:8.5pt;
+font-family:Verdana'>Declaration</span></b><span style='font-size:8.5pt;
+font-family:Verdana'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style='padding:3.0pt 3.0pt 3.0pt 3.0pt' style='margin-bottom:0; margin-top:0'>
+<p style='margin-bottom:0; margin-top:0'><span style='font-size:8.5pt;
+font-family:"Courier New"'><p align='left' style='margin-top: 0; margin-bottom: 0'>Declare Function <b>fxLight</b> Lib "fx.dll" ( _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>DC</b> As Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>X</b> As Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>Y</b> As Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>Color</b> As Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>Extension</b> As Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>Definition</b> As Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>Flags</b> As Long) As Long</p>
+</span></p>
+</td>
+</tr>
+<tr style='height:13.5pt'>
+<td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+height:13.5pt'>
+<p style='margin-bottom:0; margin-top:0'><b><span style='font-size:8.5pt;
+font-family:Verdana'>Parameters</span></b><span style='font-size:8.5pt;
+font-family:Verdana'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style='padding:3.0pt 3.0pt 3.0pt 3.0pt' style='margin-bottom:0; margin-top:0'>
+<p style='margin-bottom:0; margin-top:0' style="margin-top: 0; margin-bottom: 0">
+<span style='font-size:8.5pt; font-family:Courier New'><p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>DC</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Identifies the device context.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>X</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies the x-coordinate, in logical units, of the light source.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>Y</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies the y-coordinate, in logical units, of the light source.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>Color</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies the light RGB color.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>Extension</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies the light extension.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>Definition</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies the light definition value (0-255).</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>Flags</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies light type:</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>&nbsp; &amp;H0&nbsp; default</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>&nbsp; &amp;H1</p>
+</span></p>
+</td>
+</tr>
+<tr>
+<td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+height:13.5pt'>
+<p style='margin-bottom:0; margin-top:0'><span style="font-size: 8.5pt"><b>
+<span style="font-family: Verdana">Return Values</span></b></span></p>
+</td>
+</tr>
+<tr>
+<td style='padding:3.0pt 3.0pt 3.0pt 3.0pt' style='margin-bottom:0; margin-top:0'>
+<p style="margin-top: 0; margin-bottom: 0">
+<span style='font-size:8.5pt; font-family:Verdana'>If the function succeeds, the return value is nonzero; if fails, the return value is zero.</span></p>
+<p style="margin-top: 0; margin-bottom: 0">
+<span style="font-family: Verdana; font-size: 8.5pt">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

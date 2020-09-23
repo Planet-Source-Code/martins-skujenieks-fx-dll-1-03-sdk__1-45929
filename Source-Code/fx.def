@@ -1,0 +1,50 @@
+LIBRARY fx
+DESCRIPTION This is the Description
+
+EXPORTS
+		fxAlphaBlend				@1
+		fxAmbientLight				@2
+		fxAntiAlias					@3
+		fxBitBlt					@4
+		fxBlur						@5
+		fxBrightness				@6
+		fxCMYK						@7
+		fxDrawText					@8
+		fxEmboss					@9
+		fxEngrave					@10
+		fxGamma						@11
+		fxGetBlue					@12
+		fxGetGreen					@13
+		fxGetRed					@14
+		fxGreyscale					@15
+		fxGridelines				@16
+		fxHSLtoRGB					@17
+		fxHue						@18
+		fxInversion					@19
+		fxInvert					@20
+		fxLight						@21
+		fxMirror					@22
+		fxMosaic					@23
+		fxPaletteIndex				@24
+		fxPaletteRGB				@25
+		fxReduceColors				@26
+		fxRelief					@27
+		fxRender					@28
+		fxReplaceColor				@29
+		fxReplaceColors				@30
+		fxResample					@31
+		fxRGB						@32
+		fxRGBtoHSL					@33
+		fxRotate					@34
+		fxSaturation				@35
+		fxScanlines					@36
+		fxScreenShot				@37
+		fxScroll					@38
+		fxSemitransparentBlt		@39
+		fxShadeColors				@40
+		fxShift						@41
+		fxStretchBlt				@42
+		fxText						@43
+		fxTone						@44
+		fxTransparentBlt			@45
+		fxZoom						@46

@@ -1,0 +1,121 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1257">
+<title>FX.DLL SDK</title>
+</head>
+
+<body>
+
+<table border=0 cellspacing=0 cellpadding=0 width=360 style='border-collapse:collapse;mso-padding-alt:3.0pt 3.0pt 3.0pt 3.0pt'>
+<tr>
+<td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+<p style='margin-bottom:0; margin-top:0'><font size="6">
+<span style="font-family: Verdana">fxResample</span></font></p>
+</td>
+</tr>
+<tr>
+<td style='padding:3.0pt 3.0pt 3.0pt 3.0pt' style='margin-bottom:0; margin-top:0'>
+<p style='margin-bottom:0; margin-top:0'>
+<span style="font-family: Verdana; font-size: 8.5pt">Resamples </span><span style='font-size:8.5pt;
+font-family:Verdana'>bitmap by specified factors.</span></p>
+<p style='margin-bottom:0; margin-top:0'>
+<span style="font-family: Verdana; font-size: 8.5pt">&nbsp;</span></p>
+</td>
+</tr>
+<tr style='height:13.5pt'>
+<td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+height:13.5pt'>
+<p style='margin-bottom:0; margin-top:0'><b><span style='font-size:8.5pt;
+font-family:Verdana'>Declaration</span></b><span style='font-size:8.5pt;
+font-family:Verdana'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style='padding:3.0pt 3.0pt 3.0pt 3.0pt' style='margin-bottom:0; margin-top:0'>
+<p style='margin-bottom:0; margin-top:0'><span style='font-size:8.5pt;
+font-family:"Courier New"'><p align='left' style='margin-top: 0; margin-bottom: 0'>Declare Function
+<b>fxResample</b> Lib "fx.dll" ( _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>DestDC</b> As Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>DestX</b> As Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>DestY</b> As Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>SrcDC</b> As Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>SrcX</b> As Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>SrcY</b> As Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>SrcWidth</b> As Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>SrcHeight</b> As Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>Horizontal</b> As Double, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'><span style='font-size:8.5pt;
+font-family:"Courier New"'>ByVal <b>Vertical</b> As Double, _</span></p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>TransparentColor</b> As Long, _</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>ByVal <b>Flags</b> As Long) As Long</p>
+</span></p>
+</td>
+</tr>
+<tr style='height:13.5pt'>
+<td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+height:13.5pt'>
+<p style='margin-bottom:0; margin-top:0'><b><span style='font-size:8.5pt;
+font-family:Verdana'>Parameters</span></b><span style='font-size:8.5pt;
+font-family:Verdana'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style='padding:3.0pt 3.0pt 3.0pt 3.0pt' style='margin-bottom:0; margin-top:0'>
+<p style='margin-bottom:0; margin-top:0' style="margin-top: 0; margin-bottom: 0">
+<span style='font-size:8.5pt; font-family:Courier New'><p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>DestDC</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Identifies the destination device context.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>DestX </b>&nbsp;</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies the x-coordinate, in logical units, of the 
+left top corner of the destination rectangle.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>DestY</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies the y-coordinate, in logical units, of the<span style='font-size:8.5pt; font-family:Courier New'> 
+left top corner
+</span>of the destination rectangle.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>SrcDC</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Identifies the source device context.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>SrcX</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies the x-coordinate, in logical units, of the upper-left corner of the source rectangle.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>SrcY</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies the y-coordinate, in logical units, of the upper-left corner of the source rectangle.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>SrcWidth</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies the width, in logical units, of the source rectangle.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>SrcHeight</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies the height, in logical units, of the source rectangle.</p>
+<span style='font-size:8.5pt; font-family:Courier New'>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>Horizontal </b>&nbsp;</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies horizontal 
+resample value (0.00-16.00).</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>Vertical </b>&nbsp;</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Specifies vertical 
+resample value (0.00-16.00).</p>
+</span>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>TransparentColor</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>The RGB color in the source device context to treat as transparent; if <b>TransparentColor = -1</b>, the transparency will not be used.</p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>· <b>Flags</b> </p>
+<p align='left' style='margin-top: 0; margin-bottom: 0'>Reserved parameter.</p>
+</span></p>
+</td>
+</tr>
+<tr>
+<td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+height:13.5pt'>
+<p style='margin-bottom:0; margin-top:0'><span style="font-size: 8.5pt"><b>
+<span style="font-family: Verdana">Return Values</span></b></span></p>
+</td>
+</tr>
+<tr>
+<td style='padding:3.0pt 3.0pt 3.0pt 3.0pt' style='margin-bottom:0; margin-top:0'>
+<p style="margin-top: 0; margin-bottom: 0">
+<span style='font-size:8.5pt; font-family:Verdana'>If the function succeeds, the return value is nonzero; if fails, the return value is zero.</span></p>
+<p style="margin-top: 0; margin-bottom: 0">
+<span style="font-family: Verdana; font-size: 8.5pt">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>
